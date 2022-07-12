@@ -10,7 +10,7 @@ public class DBConnection {
 	public static Connection getConnection() {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/hr", "Username", "Password");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/instpay", "Username", "Password");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
